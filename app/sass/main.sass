@@ -1,0 +1,549 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  color: #343434
+  font-feature-settings: 'liga' off
+  background: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+
+.logo
+  text-align: center
+  text-transform: uppercase
+  font-feature-settings: 'liga' off
+  font-family: 'Manrope', sans-serif
+  font-weight: 800
+  font-size: 21px
+  width: 100%
+  color: #343434
+
+.color-accent
+  color: $accent
+
+.bg-yellow
+  background: #FFF0CB
+
+.bg-blue
+  background: #CFEBFF
+
+.bg-orange
+  background: #FFE1CB
+
+.container
+  position: relative
+  max-width: 1220px
+  padding: 0 20px
+
+.row
+  margin: 0 -10px
+
+h1, h3
+  width: 100%
+  font-size: 30px
+  font-weight: 600
+  font-feature-settings: 'liga' off
+  line-height: 37px
+
+h2
+  font-size: 46px
+  font-weight: 800
+  line-height: 57px
+
+.p-120
+  padding: 120px 0
+
+
+
+button
+  outline: none
+  padding: 0
+  box-sizing: border-box
+  border: none
+    radius: 0
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 18px
+  font-weight: 500
+  font-feature-settings: 'liga' off
+  border-radius: 50px
+  padding: 18px 23px
+  width: fit-content
+  outline: none
+  box-shadow: none
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn-accent
+  color: #FFFFFF
+  background: #FE9456
+  &:hover
+    background: #FFE1CB
+    color: #343434
+
+.btn-icon
+  margin: 0 8px 0 0
+  width: 20px
+  height: 20px
+  min-width: 20px
+
+.box-text
+  font-size: 22px
+  line-height: 28px
+  p
+    margin: 0 0 28px
+    &:last-child
+      margin: 0
+
+.w-100
+  width: 100%
+
+.row-wrapper
+  display: flex
+  flex-wrap: wrap
+
+.mb-45
+  margin-bottom: 45px
+
+.d-inline
+  display: inline-block
+
+//header
+header
+  position: relative
+  padding: 24px 0
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    left: 0
+    top: 0
+    border-radius: 0 50px 50px 0
+    background: #FFE1CB
+    height: 100%
+    width: calc(100% - 162px)
+  .logo
+    margin: 0 auto
+
+//main
+main
+  position: relative
+  z-index: 1
+  overflow: hidden
+  padding: 70px 0 80px
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 1179px
+    height: 589px
+    background: url("../img/decor1.svg") no-repeat center
+      size: 100%
+    bottom: 10px
+    right: -487px
+  &:after
+    content: ''
+    position: absolute
+    width: 113px
+    height: 113px
+    border-radius: 50%
+    background: #FFE1CB
+    right: 566px
+    top: 186px
+    z-index: -1
+  .btn
+    margin: 0 0 46px
+
+.main-content
+  max-width: 500px
+  .box-text
+    max-width: 280px
+    margin: 22px 0
+
+.schedule
+  max-width: 580px
+  width: 100%
+  padding: 34px 70px
+  border: 2px solid #FFE1CB
+    radius: 55px
+  h3
+    margin: 8px 0 5px
+
+.schedule-top
+  width: 100%
+
+.schedule-body
+  width: 100%
+  position: relative
+
+.img-diagram
+  position: absolute
+  right: 20px
+  top: 7px
+
+.img-mobile
+  display: none
+  position: absolute
+  bottom: 5px
+  right: 0
+
+.schedule-body-line
+  width: 100%
+  position: relative
+  margin: 30px 0 0
+  line-height: 26px
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    height: 1px
+    width: calc(100% - 40px)
+    background: #E1E1E1
+
+.main-img
+  position: absolute
+  right: -40px
+  bottom: -80px
+  width: 303px
+
+.schedule-footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 10px 0 0 40px
+
+.schedule-footer-img
+  width: 100%
+
+.dashboard-items
+  max-width: 480px
+  width: 100%
+
+.dashboard-item
+  display: flex
+  align-items: center
+  margin: 0 0 18px
+  width: 100%
+  border: 2px solid #FFE1CB
+    radius: 55px
+  background: #fff
+  line-height: 26px
+  h4
+    font-size: 30px
+    font-weight: 600
+    line-height: 37px
+  &:last-child
+    margin: 0
+  &__icon
+    background: #FFE1CB
+    border-radius: 50%
+    width: 80px
+    height: 81px
+    min-width: 80px
+    padding: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__text
+    padding: 10px 20px 8px
+
+//.your-condition
+.your-condition
+  .schedule
+    padding: 18px 70px
+    h3
+      margin: 8px 0 5px
+  .schedule-footer
+    padding: 0
+    margin: 9px 0 0
+    span
+      margin: 5px 0 0
+      line-height: 26px
+      display: inline-block
+
+  h3
+    margin: 0 0 45px
+
+//motivation
+.motivation
+  padding: 75px 0
+
+.motivation-content
+  .box-text
+    margin: 22px 0
+
+.motivation-img
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translate(0,-50%)
+
+//result-work
+.result-work
+  h2
+    margin: 0 0 46px
+
+//reduce-volumes
+.reduce-volumes
+  .box-text
+    font-size: 16px
+  ul
+    margin: 46px 0 16px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    li
+      width: 33.3%
+  .btn
+    margin: 46px 0 0
+
+.list-check
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 30px
+
+.icon-check
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #FE9456
+  width: 33px
+  height: 33px
+  border-radius: 50%
+  min-width: 33px
+  margin: 0 12px 0 0
+
+//footer
+footer
+  padding: 0 0 30px 0
+  .logo
+    text-align: left
+
+.copyright
+  font-weight: bold
+  text-align: right
+
+.result-work-box
+  align-items: center
+  .box-text
+    font-size: 16px
+    line-height: 26px
+    max-width: 430px
+  h3
+    margin: 0 0 22px
+  .list-check
+    margin: 0 0 46px
+    li
+      margin: 22px 0 0
+
+.result-work-img
+  border-radius: 50%
+  overflow: hidden
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  width: 380px
+  height: 380px
+  padding: 180px 80px 0
+
+
+.result-work-img.p-0
+  padding: 0
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+//advantages
+.advantages
+  h2
+    margin: 0 0 40px
+
+.card
+  border: 2px solid #FFE1CB
+    radius: 25px
+  margin: 0 0 22px
+
+.accordion>.card:not(:last-of-type)
+  border: 2px solid #FFE1CB
+    radius: 25px
+
+.card-header
+  background: transparent
+  border: none
+  padding: 26px
+  margin: 0
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  h4
+    font-size: 22px
+    line-height: 28px
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:after
+      content: ''
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: .3s ease
+      width: 33px
+      min-width: 33px
+      height: 33px
+      border-radius: 50%
+      background: #FE9456 url("../img/arrow-right.svg") no-repeat center
+        size: 9px
+      transform: rotate(90deg)
+  .collapsed
+    &:after
+      transform: rotate(0)
+
+
+.card-body
+  padding: 0 80px 28px 26px
+  line-height: 26px
+
+.accordion>.card>.card-header
+  border-radius: 25px
+  margin: 0
+
+.accordion>.card:not(:first-of-type)
+  border-radius: 25px
+
+.advantages-img
+  display: flex
+  align-items: center
+  justify-content: center
+
+//.warranty
+.warranty
+  .box-text
+    max-width: 500px
+  .result-work-img
+    width: 500px
+    height: 500px
+
+.list-payment
+  margin: 30px 0 0
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+@import "media"
+// Всегда в конце
