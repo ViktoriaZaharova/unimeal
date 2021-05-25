@@ -24,16 +24,21 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/jQuery.countdownTimer.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <div class="timer">
+          <p>Скидка исчезнет через:</p>
+          <div class="countdown-time"></div>
+        </div>
         <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#exampleModal">
           <span class="btn-icon"><img src="img/check.svg" alt=""></span>
           <span class="btn-text">Получить план</span>
@@ -50,385 +55,295 @@
         <div class="main-content">
           <h1>Приступи к своему плану похудения прямо сейчас!</h1>
           <div class="box-text"><p>Присоединяйтесь к 45+ тыс. наших довольных пользователей</p></div>
-          <a href="#" class="btn btn-accent">
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#exampleModal">
             <span class="btn-icon"><img src="img/check.svg" alt=""></span>
             <span class="btn-text">Получить план</span>
           </a>
         </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="schedule">
-          <div class="schedule-top">
-            <p>Прогноз набора веса</p>
-            <h3>15 кг до Мая 2021</h3>
-          </div>
-          <div class="schedule-body">
-            <div class="schedule-body-line">
-              <span>80</span>
-            </div>
-            <div class="schedule-body-line">
-              <span>75</span>
-            </div>
-            <div class="schedule-body-line">
-              <span>70</span>
-            </div>
-            <div class="schedule-body-line">
-              <span>65</span>
-            </div>
-            <img src="img/diagram1.svg" alt="" class="img-diagram">
-            <img src="img/diagram2.svg" alt="" class="img-mobile">
-
-          </div>
-
-          <div class="schedule-footer">
-            <span>Апрель</span>
-            <span>Май</span>
-          </div>
-        </div>
-      </div>
 
       <div class="col-12 col-lg-5">
-        <div class="dashboard-items">
-          <div class="dashboard-item">
-            <div class="dashboard-item__icon"><img src="img/icon1.svg" alt=""></div>
-            <div class="dashboard-item__text">
-              <p>Результат после первой недели</p>
-              <h4>+30% энергии</h4>
-            </div>
-          </div>
-          <div class="dashboard-item">
-            <div class="dashboard-item__icon"><img src="img/icon2.svg" alt=""></div>
-            <div class="dashboard-item__text">
-              <p>Дневной минимум воды</p>
-              <h4>2 л</h4>
-            </div>
-          </div>
-          <div class="dashboard-item">
-            <div class="dashboard-item__icon"><img src="img/icon3.svg" alt=""></div>
-            <div class="dashboard-item__text">
-              <p>Дневная норма калорий</p>
-              <h4>2600 кКал</h4>
-            </div>
-          </div>
-          <div class="dashboard-item">
-            <div class="dashboard-item__icon"><img src="img/icon4.svg" alt=""></div>
-            <div class="dashboard-item__text">
-              <p>Рекомендуемая длительность программы</p>
-              <h4>30 дней</h4>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="col-12 col-lg-1">
-        <div class="main-img"><img src="img/women.svg" alt=""></div>
+        <div class="home-img"><img src="img/img5.jpeg" alt=""></div>
       </div>
     </div>
 
   </div>
 </main>
 
-<section class="your-condition p-120">
+<section class="plane p-120">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h3>Ваше состояние физической формы</h3>
+      <div class="col-12 col-lg-6 order-lg-1">
+        <div class="plane-img"><img src="img/iphone1.png" alt=""></div>
       </div>
-    </div>
-
-    <div class="row">
       <div class="col-12 col-lg-6">
-        <div class="schedule">
-          <div class="schedule-top">
-            <p>Обзор вашего профиля</p>
-            <h3>23.88</h3>
-            <p>Ваш вес: слегка избыточный</p>
-          </div>
-
-          <div class="schedule-footer">
-            <div class="schedule-footer-img"><img src="img/range.svg" alt=""></div>
-            <span>Недостаточный</span>
-            <span>В норме</span>
-            <span>Ожирение</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-5">
-        <div class="dashboard-items">
-          <div class="dashboard-item">
-            <div class="dashboard-item__icon"><img src="img/icon5.svg" alt=""></div>
-            <div class="dashboard-item__text">
-              <p>Возраст</p>
-              <h4>30 лет</h4>
-            </div>
-          </div>
-          <div class="dashboard-item">
-            <div class="dashboard-item__icon"><img src="img/icon6.svg" alt=""></div>
-            <div class="dashboard-item__text">
-              <p>Рост / Вес</p>
-              <h4>165 см / 65 кг</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="motivation bg-yellow">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-5 order-lg-1">
-        <div class="motivation-img"><img src="img/img4.svg" alt=""></div>
-      </div>
-
-      <div class="col-12 col-lg-6 offset-lg-1">
-        <div class="motivation-content">
-          <h3>У них получилось, значит и у Вас тоже получится!</h3>
-          <div class="box-text">
-            <p>76% людей с похожими параметрами повысили уровень энергии с помощью нашего плана</p>
-          </div>
-          <a href="#" class="btn btn-accent">
-            <span class="btn-icon"><img src="img/check.svg" alt=""></span>
-            <span class="btn-text">Получить план</span>
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="reduce-volumes p-120">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <h3>Вы похудеете и уменьшите объемы:</h3>
-
+        <h3>Получите свой план питания на 28 дней марафона для похудения</h3>
         <ul class="list-check">
           <li>
             <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-            <p>Подбородок</p>
+            <p>Список продуктов для покупок на неделю</p>
           </li>
           <li>
             <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-            <p>Живот</p>
+            <p>Тренировки для жиросжигания</p>
           </li>
           <li>
             <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-            <p>Руки</p>
+            <p>Индивидуальная схема питания</p>
           </li>
           <li>
             <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-            <p>Грудь</p>
+            <p>Гайды и лайфхаки в питании и тренировках</p>
           </li>
           <li>
             <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-            <p>Попа</p>
+            <p>Рекомендации от специалистов</p>
           </li>
           <li>
             <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-            <p>Ноги</p>
+            <p>Групповые и личные консультации</p>
           </li>
         </ul>
-
-        <div class="box-text">
-          <p>Подкожный жир - причина плохой формы и целлюлита, избавления от него предаст вашему телу лучшие формы.
-            Висцеральный жир — это оболочка ваших органов, увеличивающая объем тела. Этот тип жира наиболее опасен,
-            поскольку влияет не только на вашу фигуру, но и на ваше здоровье и гормональный фон.</p>
-          <p>Мы подобрали индивидуальный план питания для вашего типа телосложения, который будет способствовать потере
-            подкожного и висцерального жира.</p>
-        </div>
-
-        <a href="#" class="btn btn-accent">
-          <span class="btn-icon"><img src="img/check.svg" alt=""></span>
-          <span class="btn-text">Получить план</span>
-        </a>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="value-img"><img src="img/img2.svg" alt=""></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="result-work">
+<section class="planes">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2>Что вы получите?</h2>
+      <div class="col-12 text-center">
+        <h2>Выбери свой план</h2>
       </div>
     </div>
 
-    <div class="row result-work-box mb-45">
-      <div class="col-12 col-md-6 col-lg-5 order-md-1 offset-lg-1">
-        <div class="result-work-img bg-yellow"><img src="img/iphone1.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="result-work-content">
-          <h3>Персональный план питания на 28 дней</h3>
-          <div class="box-text">
-            <p>План питания - это комплексная система в которую входит набор рецептов разработанные профессионалами,
-              каждый рецепт содержит пошаговую инструкцию приготовления.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row result-work-box mb-45">
-      <div class="col-12 col-md-6 col-lg-5">
-        <div class="result-work-img bg-blue"><img src="img/iphone2.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="result-work-content">
-          <h3>Ускорение жиросжигания ваших проблемных зон </h3>
-          <div class="box-text">
-            <p>Тренировки которые усиливают эффект от программы питании, не занимают много времени но требуют ежедневной
-              активности, восстанавливают биоритмы дня и помогают войти в правильный режим!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row result-work-box mb-45">
-      <div class="col-12 col-md-6 col-lg-5 order-md-1 offset-lg-1">
-        <div class="result-work-img bg-orange"><img src="img/iphone3.png" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="result-work-content">
-          <h3>Онлайн поддержка </h3>
-          <div class="box-text">
-            <p>Ваш наставник группы готов будет ответить на все ваши вопросы в процессе участия в марафоне.
-              Общая группа единомышленников всегда готова поддержать друг друга, мотивировать и поделится опытом.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row result-work-box">
-      <div class="col-12 col-md-6 col-lg-5">
-        <div class="result-work-img bg-yellow p-0"><img src="img/img3.jpeg" alt=""></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-6">
-        <div class="result-work-content">
-          <h3>Набор гайдов и лайфхаков по фитнесу и питанию и много другое </h3>
-          <div class="box-text">
-            <p>У нас большой опыт в ведении людей к целям и на этом пути есть множество типичных ошибок или проблем с
-              которыми сталкиваются люди, у нас есть проверенные методологии которые помогут вам пройти этот путь
-              проще!</p>
-          </div>
-          <ul class="list-check">
-            <li>
-              <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-              <p>Техника правильного бега при болях в коленях</p>
-            </li>
-            <li>
-              <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-              <p>Методы интервального голодания</p>
-            </li>
-            <li>
-              <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-              <p>Определите какой тип диет вам подходит Кето-диета, Палео-диета и т.д.</p>
-            </li>
-            <li>
-              <div class="icon-check"><img src="img/checkbox.svg" alt=""></div>
-              <p>Какой режим питания подойдет именно вам</p>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-accent">
-            <span class="btn-icon"><img src="img/check.svg" alt=""></span>
-            <span class="btn-text">Получить план</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="advantages p-120">
-  <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2>Дополнительные преимущества</h2>
-      </div>
-
-      <div class="col-12 col-lg-8">
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h4 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Повышение полового влечения
-              </h4>
-            </div>
-
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>Исследование штата Пенсильвания, проведенное в 2012 году и посвященное бесплодию, показало, что у
-                  женщин, снизивших вес, улучшилась сексуальная функция. Многие заметили ощутимые изменения в
-                  сексуальном
-                  желании и возбуждении. Кроме того, из-за избыточного веса и, как следствие, высокого уровня
-                  холестерина,
-                  в кровеносных сосудах накапливаются бляшки, которые затем замедляют приток крови к гениталиям, что, в
-                  свою очередь, затрудняет возбуждение и оргазм.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h4 data-toggle="collapse" class="collapsed"
-                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Экономия
-              </h4>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>Исследование штата Пенсильвания, проведенное в 2012 году и посвященное бесплодию, показало, что у
-                  женщин, снизивших вес, улучшилась сексуальная функция. Многие заметили ощутимые изменения в
-                  сексуальном
-                  желании и возбуждении. Кроме того, из-за избыточного веса и, как следствие, высокого уровня
-                  холестерина,
-                  в кровеносных сосудах накапливаются бляшки, которые затем замедляют приток крови к гениталиям, что, в
-                  свою очередь, затрудняет возбуждение и оргазм.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h4 data-toggle="collapse" class="collapsed"
-                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Снижение риска развития рака
-              </h4>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>Исследование штата Пенсильвания, проведенное в 2012 году и посвященное бесплодию, показало, что у
-                  женщин, снизивших вес, улучшилась сексуальная функция. Многие заметили ощутимые изменения в
-                  сексуальном
-                  желании и возбуждении. Кроме того, из-за избыточного веса и, как следствие, высокого уровня
-                  холестерина,
-                  в кровеносных сосудах накапливаются бляшки, которые затем замедляют приток крови к гениталиям, что, в
-                  свою очередь, затрудняет возбуждение и оргазм.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="col-12 col-lg-4">
-        <div class="advantages-img"><img src="img/apple.svg" alt=""></div>
+        <div class="plane-card">
+          <ul class="list-label">
+            <li class="bg-yellow">Скидка 67%</li>
+            <li class="bg-blue">Лучший выбор!</li>
+          </ul>
+          <div class="plane-card__body">
+            <h3>План на 6 месяцев</h3>
+            <div class="price-wrapper">
+              <div class="old-price">$120</div>
+              <div class="price-stage">$39.99 за 6 месяцев</div>
+            </div>
+          </div>
+
+          <div class="plane-card__footer">
+            <h3 class="price">$1.5</h3>
+            <p>в неделю</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="plane-card">
+          <ul class="list-label">
+            <li class="bg-yellow">Скидка 50%</li>
+          </ul>
+          <div class="plane-card__body">
+            <h3>План на 3 месяца</h3>
+            <div class="price-wrapper">
+              <div class="old-price">$60</div>
+              <div class="price-stage">$29.99 за 6 месяцев</div>
+            </div>
+          </div>
+
+          <div class="plane-card__footer">
+            <h3 class="price">$2.5</h3>
+            <p>в неделю</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="plane-card">
+          <div class="plane-card__body">
+            <h3>План на 28 дней</h3>
+            <div class="price-wrapper">
+              <div class="old-price">$120</div>
+              <div class="price-stage">$39.99 за 6 месяцев</div>
+            </div>
+          </div>
+
+          <div class="plane-card__footer">
+            <h3 class="price">$5.0</h3>
+            <p>в неделю</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 offset-lg-4 offset-md-2">
+        <a href="#" class="btn btn-accent">Оплата картой</a>
+        <a href="#" class="btn btn-accent"><img src="img/pay.svg" alt=""></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+        <ul class="list-payment">
+          <li><a href="#"><img src="img/pay1.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/pay2.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/pay3.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/pay4.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/pay5.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/pay6.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/pay7.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/pay8.svg" alt=""></a></li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
+<section class="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="reviews-wrapper">
+          <div class="row  align-items-center">
+            <div class="col-12 col-lg-5">
+              <div class="reviews-img">
+                <img src="img/reviews1.png" alt="">
+                <p>Татьяна Новикова, 29 лет</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 offset-lg-1">
+              <h3>Отзывы наших клиентов, которые уже достигли потрясающих результатов</h3>
+              <div class="box-text">
+                <p>“Я точно хочу поделиться своими результатами. Я похудел 17 кг за 3 месяца! Раньше у меня никогда не
+                  получалось достигнуть хороших результатов, когда я начинал работать над своим телом. Этот план помог
+                  мне найти действительно вкусные рецепты, основанные на моих требованиях.</p>
+                <p>У меня был большой выбор блюд на каждый прием пищи. Кроме того, огромное преимущество программы — это
+                  возможность получить план тренировок, который ускорил мои достижения. И нет необходимости посещать
+                  спортзал. Настоятельно рекомендую.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="question bg-yellow">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Наши клиенты часто спрашивают</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-4 col-md-6">
+        <div class="question-box">
+          <div class="question-box__icon"><img src="img/question.svg" alt=""></div>
+          <h3>Как я смогу получить доступ к своему плану питания?</h3>
+          <div class="box-text">
+            <p>Сразу после оплаты мы сгенерируем план питания на основе ваших ответов на вопросы теста, а также ваших
+              пожеланий. В верхнем правом меню сайта выберите «Мой план питания» и введите свой адрес электронной почты.
+              Вот и все — вы мгновенно получите доступ к своему личному файлу. Кроме того, ваш план питания будет также
+              доступен по ссылке в письме, которое мы отправим на ваш email.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-6">
+        <div class="question-box">
+          <div class="question-box__icon"><img src="img/question.svg" alt=""></div>
+          <h3>Что делать, если я не получил/не получила письмо</h3>
+          <div class="box-text">
+            <p>Мы очень ценим наших клиентов и всегда готовы помочь с любым вопросом. Если вы столкнулись с такой
+              проблемой, сначала проверьте папку со спамом. Несмотря на то, что вы всегда можете получить доступ к
+              своему плану с сайта, наша служба поддержки будет рада отправить вам еще одно электронное письмо, если это
+              необходимо.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-6">
+        <div class="question-box">
+          <div class="question-box__icon"><img src="img/question.svg" alt=""></div>
+          <h3>Когда я получу свой план питания?</h3>
+          <div class="box-text">
+            <p>Вы получите доступ к своему персонализированному плану питания сразу же после оплаты.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Отзывы о нашей программе</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="reviews-slider w-100">
+          <div class="slide">
+            <div class="reviews-card">
+              <div class="reviews-card__head">
+                <div class="reviews-card__photo"><img src="img/photo1.png" alt=""></div>
+                <a href="#" class="links-soc">@quicksilver18</a>
+              </div>
+              <div class="reviews-card__body">
+                <p>Я ценю гибкость этого плана и разнообразие блюд. Еще мне нравится, что упражнения подходят для дома,
+                  и я могу выбирать, над какой частью тела работать. Все это вместе помогло мне достичь результата,
+                  который мне действительно нравится</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-card">
+              <div class="reviews-card__head">
+                <div class="reviews-card__photo"><img src="img/photo2.png" alt=""></div>
+                <a href="#" class="links-soc">@sanguin_e</a>
+              </div>
+              <div class="reviews-card__body">
+                <p>Теперь я точно знаю, что нет необходимости ходить в спортзал, чтобы привести тело в порядок. Все, что
+                  вам нужно - это следовать рекомендованным программам питания и тренировок. Мне удалось достичь формы,
+                  о которой раньше можно было только мечтать</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-card">
+              <div class="reviews-card__head">
+                <div class="reviews-card__photo"><img src="img/photo3.png" alt=""></div>
+                <a href="#" class="links-soc">@quicksilver18</a>
+              </div>
+              <div class="reviews-card__body">
+                <p>Я ценю гибкость этого плана и разнообразие блюд. Еще мне нравится, что упражнения подходят для дома,
+                  и я могу выбирать, над какой частью тела работать. Все это вместе помогло мне достичь результата,
+                  который мне действительно нравится</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-card">
+              <div class="reviews-card__head">
+                <div class="reviews-card__photo"><img src="img/photo1.png" alt=""></div>
+                <a href="#" class="links-soc">@quicksilver18</a>
+              </div>
+              <div class="reviews-card__body">
+                <p>Я ценю гибкость этого плана и разнообразие блюд. Еще мне нравится, что упражнения подходят для дома,
+                  и я могу выбирать, над какой частью тела работать. Все это вместе помогло мне достичь результата,
+                  который мне действительно нравится</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="warranty p-120">
   <div class="container">
@@ -446,7 +361,8 @@
               после покупки, если вы не получите видимых результатов и сможете продемонстрировать, что вы следовали
               нашему плану.
             </p>
-            <p>Узнайте больше о применимых ограничениях в нашей <a href="#" class="color-accent d-inline">политике возврата денег.</a></p>
+            <p>Узнайте больше о применимых ограничениях в нашей <a href="#" class="color-accent d-inline">политике
+              возврата денег.</a></p>
           </div>
 
           <ul class="list-payment">
@@ -484,14 +400,12 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title">Добавить программу тренировок для более быстрого похудения</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h3 class="modal-title text-center">Добавить программу тренировок для более быстрого похудения</h3>
+
       </div>
       <div class="modal-body">
         <div class="modal-banner">
-          <h4>Жиросжигающая тренировка</h4>
+          <h3>Жиросжигающая тренировка</h3>
           <img src="img/bg-modal.png" alt="">
         </div>
 
@@ -530,6 +444,8 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/jQuery.countdownTimer.js"></script>
+<script src="js/jQuery.countdownTimer-ru.js"></script>
 <script src="js/common.js"></script>
 
 </body>

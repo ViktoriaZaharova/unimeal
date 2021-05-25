@@ -230,7 +230,6 @@ header
 main
   position: relative
   z-index: 1
-  overflow: hidden
   padding: 70px 0 80px
   &:before
     content: ''
@@ -544,6 +543,414 @@ footer
     margin: 0 20px 0 0
     &:last-child
       margin: 0
+
+.home
+  padding: 70px 0 0
+  &:after
+    right: 560px
+    top: 58px
+    width: 57px
+    height: 57px
+  &:before
+    background: #FFF0CB
+    width: 953px
+    height: 953px
+    right: -374px
+    top: 75px
+    bottom: auto
+    border-radius: 50%
+  h1
+    font-size: 72px
+    font-weight: 800
+    line-height: 80px
+  .main-content
+    max-width: none
+  .box-text
+    max-width: 354px
+    margin: 46px 0 22px
+
+
+.home-img
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  border-radius: 50%
+  overflow: hidden
+  width: 420px
+  height: 420px
+  border: 30px solid #fff
+
+.plane
+  position: relative
+  z-index: 1
+  h3
+    margin: 0 0 46px
+  ul
+    font-size: 22px
+
+.plane-img
+  border-radius: 50%
+  width: 540px
+  height: 540px
+  border: 30px solid #FFFFFF
+  background: #FFE1CB
+  overflow: hidden
+  padding: 136px 100px
+
+.header
+  padding: 13px 0
+  &:before
+    width: calc(100% - 50px)
+
+.timer
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 32px 0 auto
+  font-size: 22px
+  color: #000000
+
+
+.countdown-time
+  margin: 0 0 0 5px
+
+.colorDefinition
+  border: none
+    radius: 0
+  background: transparent
+  width: auto
+  height: auto
+
+.timerDisplay
+  padding: 0
+
+.displaySection
+  border: none
+
+.periodDisplay
+  display: none
+
+.numberDisplay
+  font-size: 22px
+  color: #000000
+  font-weight: normal
+  font-family: $default-font
+  line-height: 28px
+
+.label2 .displaySection
+  width: auto
+
+.displaySection
+  display: flex
+  align-items: center
+  color: #000
+  font-size: 22px
+  &:after
+    content: ':'
+    display: inline-block
+    margin: 0 2px
+    font-family: $default-font
+  &:last-child
+    &:after
+      display: none
+
+//reviews
+.reviews
+  padding: 120px 0 110px
+  .container
+    &:before
+      content: ''
+      position: absolute
+      width: 143px
+      height: 123px
+      top: -69px
+      left: -90px
+      background: url("../img/quote.svg") no-repeat center
+        size: 100%
+      opacity: .5
+      z-index: -1
+
+.reviews-wrapper
+  width: 100%
+  background: #FFF0CB
+  border-radius: 25px
+  padding: 54px 80px 66px
+  position: relative
+  z-index: 1
+  h3
+    margin: 0 0 46px
+  .box-text
+    font-size: 16px
+
+
+.reviews-img
+  p
+    margin: 10px auto 0
+    text-align: center
+  img
+    border-radius: 25px
+
+//question
+.question
+  padding: 70px 0 80px
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: -165px
+    bottom: -84px
+    border-radius: 50%
+    background: #FFD9A0
+    opacity: .5
+    width: 572px
+    height: 572px
+  &:after
+    content: ''
+    position: absolute
+    border-radius: 50%
+    top: 97px
+    right: 110px
+    background: #FFD9A0
+    opacity: .5
+    width: 168px
+    height: 168px
+  .container
+    z-index: 1
+    &:before
+      content: ''
+      bottom: -56px
+      right: -95px
+      position: absolute
+      width: 335px
+      height: 376px
+      background: url('../img/apple-decor.svg') no-repeat center
+        size: contain
+      z-index: -1
+  h2
+    margin: 0 0 46px
+
+
+.question-box
+  background: #fff
+  padding: 40px 32px
+  .box-text
+    font-size: 16px
+    line-height: 26px
+  h3
+    margin: 56px 0 12px
+
+//reviews-section
+.reviews-section
+  padding: 120px 0 0
+  h2
+    margin: 0 auto 46px
+
+.reviews-card
+  margin: 0 auto 46px
+  padding: 0 10px
+  &__head
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.reviews-card__photo
+  border-radius: 50%
+  width: 56px
+  height: 56px
+  margin: 0 auto 8px
+
+.links-soc
+  text-align: center
+  color: #343434
+  font-weight: bold
+
+.reviews-card__body
+  background: #FFEDE0
+  border-radius: 10px
+  position: relative
+  margin: 33px auto 0
+  padding: 31px 36px
+  color: #18191F
+  text-align: center
+  line-height: 26px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: -15px
+    transform: translate(-50%,0)
+    border-bottom: 15px solid #FFEDE0
+    border-left: 18px solid transparent
+    border-right: 18px solid transparent
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  width: 100%
+  position: relative
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  li
+    cursor: pointer
+    width: 8px
+    height: 8px
+    border: 1px solid #FE9456
+      radius: 50%
+    background: #FE9456
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    border: 3px solid #FE9456
+    width: 14px
+    height: 14px
+    background: #fff
+
+//planes
+.planes
+  h2
+    margin: 0 auto 46px
+  .btn
+    width: 100%
+    margin: 0 0 20px
+    height: 62px
+    padding: 10px
+    &:last-child
+      margin: 0
+  .list-payment
+    margin: 46px auto 0
+    justify-content: center
+
+.plane-card
+  margin: 0 0 28px
+  position: relative
+  border: 2px solid #FE9456
+    radius: 18px
+  display: flex
+  align-items: stretch
+
+.list-label
+  position: absolute
+  left: 0
+  top: -11px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding: 0 17px
+  line-height: 17px
+  font-size: 12px
+  li
+    margin: 0 8px 0 0
+    padding: 2px 5px
+    border-radius: 17px
+    &:last-child
+      margin: 0
+
+.plane-card__footer
+  color: #fff
+  width: 100px
+  padding: 15px
+  text-align: center
+  background: #FE9456
+  border-radius: 16px
+  margin: 0 -2px 0 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.plane-card__body
+  width: calc(100% - 100px)
+  padding: 21px 17px
+  h3
+    color: $accent
+    margin: 0 0 19px
+
+.price-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  line-height: 19px
+  color: #626262
+
+.old-price
+  text-decoration-line: line-through
+  margin: 0 5px 0 0
+
+.price-stage
+  font-weight: 600
+
+.modal-dialog
+  max-width: 620px
+
+
+.modal-content
+  border: none
+  border-radius: 25px
+  padding: 39px 53px
+  .btn
+    max-width: 380px
+    width: 100%
+  .price
+    max-width: 270px
+    margin: 0 auto
+    text-align: center
+    font-size: 22px
+    line-height: 28px
+  ul
+    margin: 46px 0
+    font-size: 22px
+
+.modal-header
+  border: none
+  padding: 0
+
+.modal-body
+  padding: 0
+  margin: 30px 0
+  border: none
+
+.modal-footer
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 0
+  border: none
+  >*
+    margin: 0
+
+.color-black
+  color: #343434
+  &:hover
+    color: $accent
+
+.links-close
+  margin: 10px auto 0
+  font-size: 18px
+  font-weight: 500
+
+.modal-banner
+  position: relative
+  width: 100%
+  h3
+    max-width: 264px
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    padding: 0 38px
+  img
+    width: 100%
+
+
 
 @import "media"
 // Всегда в конце

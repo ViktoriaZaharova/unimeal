@@ -166,6 +166,26 @@
   .logo
     font-size: 20px
 
+  .header
+    &:before
+      width: 100%
+      border-radius: 0
+    .btn
+      height: 50px
+      padding: 8px
+    .btn-icon
+      display: none
+
+  .timer, .labelformat, .numberDisplay
+    font-size: 16px
+    line-height: 24px
+
+  .displaySection
+    &:after
+      font-size: 16px
+
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px)
   .schedule
@@ -190,9 +210,51 @@
   .reduce-volumes ul li
     width: 50%
 
-@media only screen and (max-width: 480px)
-  /**/
+  .modal-content
+    padding: 24px 15px
+    h3
+      font-size: 16px
 
+    ul
+      margin: 17px 0
+      font-size: 14px
+      li
+        margin: 0 0 12px
+    .icon-check
+      width: 20px
+      height: 20px
+      min-width: 20px
+      margin: 0 15px 0 0
+      padding: 5px
+    .price
+      font-size: 14px
+      text-align: left
+      max-width: 175px
+      line-height: 17px
+    .btn
+      padding: 13.5px
+      max-width: 220px
+      font-size: 14px
+
+  .links-close
+    margin: 9px auto 0
+    font-size: 14px
+
+  .modal-body
+    margin: 8px 0 17px
+
+  .modal-banner
+    h3
+      padding: 0 19px
+      line-height: 18px
+
+@media only screen and (max-width: 480px)
+  .timer
+    max-width: 127px
+    margin: 0
+
+  .countdown-time
+    margin: 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
