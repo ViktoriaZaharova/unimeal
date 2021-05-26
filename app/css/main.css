@@ -654,6 +654,16 @@ footer {
     margin: 0 20px 0 0; }
     .list-payment li:last-child {
       margin: 0; }
+    .list-payment li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
 
 .home {
   padding: 70px 0 0; }
@@ -679,6 +689,8 @@ footer {
   .home .box-text {
     max-width: 354px;
     margin: 46px 0 22px; }
+  .home .btn {
+    margin: 22px 0 0; }
 
 .home-img {
   display: -webkit-box;
@@ -1128,7 +1140,13 @@ footer {
     right: 0;
     z-index: -1; } }
 
-/* Medium Devices, Desktops */
+@media only screen and (max-width: 1200px) {
+  .home {
+    padding: 62px 0 0; }
+    .home h1 {
+      font-size: 60px;
+      line-height: normal; } }
+
 @media only screen and (max-width: 992px) {
   .schedule {
     margin: 0 0 20px; }
@@ -1172,7 +1190,43 @@ footer {
     margin: 28px 0 0; }
   .result-work-img {
     width: 280px;
-    height: 280px; } }
+    height: 280px; }
+  .reviews-img {
+    text-align: center;
+    margin: 0 auto 46px; }
+    .reviews-img img {
+      margin: 0 auto; }
+  .reviews-wrapper {
+    text-align: center; }
+    .reviews-wrapper h3 {
+      margin: 0 0 22px;
+      text-align: center; }
+  .warranty .result-work-img {
+    width: 280px;
+    height: 280px; }
+  .reviews-card__body {
+    padding: 31px 20px; }
+  .reviews-card {
+    margin: 0 auto 18px; }
+  .reviews-section {
+    padding: 100px 0 0; }
+    .reviews-section h2 {
+      margin: 0 auto 18px; }
+  .question-box {
+    margin: 0 0 20px; }
+  .question {
+    padding: 47px 0 39px; }
+    .question:before {
+      bottom: auto;
+      top: 600px;
+      left: -402px; }
+    .question:after {
+      right: -78px;
+      top: 97px; }
+  .question-box {
+    padding: 32px; }
+    .question-box h3 {
+      margin: 28px 0 12px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1266,7 +1320,40 @@ footer {
     font-size: 16px;
     line-height: 24px; }
   .displaySection:after {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .home:before {
+    width: 632px;
+    height: 632px;
+    right: -472px;
+    top: 411px; }
+  .home:after {
+    left: -29px;
+    right: auto;
+    top: 400px; }
+  .home h1 {
+    font-size: 36px;
+    line-height: 40px; }
+  .home .main-content .box-text {
+    margin: 22px 0; }
+  .reviews .container:before {
+    width: 100px;
+    height: 85px;
+    left: -50px;
+    top: -50px; }
+  .reviews-wrapper {
+    padding: 54px 20px 29px; }
+  .list-payment {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 46px auto 0; }
+    .list-payment li {
+      width: 25%;
+      margin: 0 0 20px; }
+      .list-payment li:last-child {
+        margin: 0 0 20px; }
+  .warranty {
+    padding: 100px 0 80px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
@@ -1317,7 +1404,55 @@ footer {
     margin: 8px 0 17px; }
   .modal-banner h3 {
     padding: 0 19px;
-    line-height: 18px; } }
+    line-height: 18px; }
+  .home-img {
+    margin: 40px 0 0;
+    border: 15px solid #fff;
+    width: 280px;
+    height: 280px; }
+  .plane-img {
+    width: 280px;
+    height: 280px;
+    border: 15px solid #fff;
+    padding: 80px 58px 0;
+    margin: 0 0 45px; }
+  .plane ul {
+    font-size: 20px;
+    line-height: 24px; }
+  .plane-card {
+    font-size: 12px;
+    margin: 0 0 20px; }
+    .plane-card .price {
+      font-size: 16px;
+      line-height: 1; }
+    .plane-card__footer {
+      padding: 8px;
+      width: 70px; }
+    .plane-card__body {
+      width: calc(100% - 70px);
+      padding: 24px 5px 12px 25px; }
+      .plane-card__body h3 {
+        font-size: 18px;
+        margin: 0 0 3px;
+        line-height: 22px; }
+  .price-wrapper {
+    font-size: 14px; }
+  .planes .btn {
+    height: 46px;
+    margin: 15px 0 0; }
+    .planes .btn:last-child {
+      margin: 10px 0 0; }
+  .planes .list-payment {
+    margin: 50px 0 0; }
+  .reviews {
+    padding: 80px 0 100px; }
+  .reviews-card {
+    padding: 0; }
+  .question .container:before {
+    width: 195px;
+    height: 219px;
+    right: -45px;
+    bottom: -48px; } }
 
 @media only screen and (max-width: 480px) {
   .timer {
@@ -1328,25 +1463,4 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
   /**/ }

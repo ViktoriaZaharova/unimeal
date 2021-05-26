@@ -8,5 +8,19 @@ $(".countdown-time").countdowntimer({
 $('.reviews-slider').slick({
     slidesToShow: 3,
     dots: true,
-    arrows: false
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
