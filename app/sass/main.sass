@@ -606,7 +606,7 @@ footer
 .header
   padding: 13px 0
   &:before
-    width: calc(100% - 50px)
+    width: calc(100% - 80px)
 
 .timer
   display: flex
@@ -630,8 +630,6 @@ footer
 .timerDisplay
   padding: 0
 
-.displaySection
-  border: none
 
 .periodDisplay
   display: none
@@ -651,6 +649,7 @@ footer
   align-items: center
   color: #000
   font-size: 22px
+  border: none
   &:after
     content: ':'
     display: inline-block
@@ -842,6 +841,11 @@ footer
     radius: 18px
   display: flex
   align-items: stretch
+  cursor: pointer
+  transition: .3s ease
+
+.plane-card.active
+  border-width: 4px
 
 .list-label
   position: absolute
